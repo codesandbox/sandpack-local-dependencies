@@ -24,15 +24,16 @@ const Home: NextPage = () => {
           <strong>Renderd in NextJS</strong>
         </p>
 
-        <Button>Button</Button>
-        <Tag>Tag</Tag>
+        <div>
+          <Button type="primary">Button1</Button>
+          <Button type="secondary">Button2</Button>
+          <Tag>Tag</Tag>
+        </div>
       </div>
 
       <SandpackProvider
         options={{
-          externalResources: [
-            "https://unpkg.com/@tailwindcss/ui/dist/tailwind-ui.min.css",
-          ],
+          externalResources: ["https://cdn.tailwindcss.com"],
         }}
         files={{
           "/App.tsx": rawSample,

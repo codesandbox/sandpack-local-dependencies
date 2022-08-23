@@ -1,6 +1,18 @@
-export default function Button({ children }: { children: string }) {
+export default function Button({
+  children,
+  type,
+}: {
+  children: string;
+  type: "primary" | "secondary";
+}) {
   return (
-    <button className="bg-blue-500 rounded-md p-2 hover:bg-blue-300 text-white">
+    <button
+      className={`${
+        type === "primary"
+          ? "bg-blue-500 hover:bg-blue-400"
+          : "bg-green-500 hover:bg-green-400"
+      } rounded-md p-2 text-white`}
+    >
       {children}
     </button>
   );

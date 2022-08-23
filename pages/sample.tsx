@@ -1,6 +1,6 @@
 import { Button, Tag } from "@internals/ds";
 
-export default function App() {
+export default function Sample() {
   return (
     <div>
       <p>
@@ -8,7 +8,8 @@ export default function App() {
       </p>
 
       <div>
-        <Button>Button</Button>
+        <Button type="primary">Button1</Button>
+        <Button type="secondary">Button2</Button>
         <Tag>Tag</Tag>
       </div>
     </div>

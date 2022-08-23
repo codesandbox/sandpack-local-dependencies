@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build:ds": "cd tsup && tsup",
+    "build:ds": "tsup",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
