@@ -2,9 +2,9 @@
   "name": "project-template-next.js",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "yarn build:ds && next dev",
     "build:ds": "tsup",
-    "build": "next build",
+    "build": "yarn build:ds && next build",
     "start": "next start",
     "lint": "next lint"
   },
