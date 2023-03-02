@@ -1,12 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 
-import {
-  SandpackProvider,
-  SandpackLayout,
-  SandpackPreview,
-  SandpackCodeEditor,
-} from "@codesandbox/sandpack-react";
+import { Sandpack } from "@codesandbox/sandpack-react";
 
 import { Button, Tag } from "./../ds";
 
@@ -21,7 +16,7 @@ const Home: NextPage = () => {
       </Head>
       <div className="p-3">
         <p>
-          <strong>Renderd in NextJS</strong>
+          <strong>Next.js</strong>
         </p>
 
         <div>
@@ -31,12 +26,9 @@ const Home: NextPage = () => {
         </div>
       </div>
 
-      <SandpackProvider
-        options={{
-          externalResources: ["https://cdn.tailwindcss.com"],
-        }}
+      <Sandpack
         files={{
-          "/App.tsx": rawSample,
+          "/pages/index.js": rawSample,
           "/node_modules/@internals/ds/package.json": {
             hidden: true,
             code: JSON.stringify({
@@ -49,13 +41,8 @@ const Home: NextPage = () => {
             code: dsRaw,
           },
         }}
-        template="react-ts"
-      >
-        <SandpackLayout>
-          <SandpackCodeEditor showLineNumbers showTabs />
-          <SandpackPreview />
-        </SandpackLayout>
-      </SandpackProvider>
+        template="nextjs"
+      />
     </div>
   );
 };
