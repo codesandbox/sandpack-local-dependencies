@@ -1,3 +1,5 @@
+import reverse from "reverse-string";
+
 export default function Button({
   children,
   type,
@@ -13,7 +15,7 @@ export default function Button({
           : "bg-green-500 hover:bg-green-400"
       } rounded-md p-2 text-white`}
     >
-      {children}
+      {reverse(children)}
     </button>
   );
 }
