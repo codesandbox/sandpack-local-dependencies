@@ -6,7 +6,7 @@ import { Sandpack } from "@codesandbox/sandpack-react";
 import { Button, Tag } from "./../ds";
 
 import rawSample from "./sample?raw";
-import dsRaw from "./../.build-ds?raw";
+import dsRaw from "../ds/build-sandpack?raw";
 
 const Home: NextPage = () => {
   return (
