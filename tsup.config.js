@@ -10,6 +10,6 @@ export default defineConfig([
     dts: true,
     external: ["react", "react-dom"],
     clean: true,
-    outDir: "./.build-ds",
+    outDir: "./ds/build-sandpack",
   },
 ]);
